@@ -81,6 +81,11 @@ $(function() {
             expect(body.hasClass('menu-hidden')).not.toBeTruthy();
         });
 
+        it('should hide menu when list icon is clicked again', function() {
+            listIcon.click();
+            expect(body.hasClass('menu-hidden')).toBeTruthy();
+        });
+
     /* TODO: Write a new test suite named "Initial Entries" */
 
         /* TODO: Write a test that ensures when the loadFeed
