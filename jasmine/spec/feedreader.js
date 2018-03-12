@@ -75,6 +75,12 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
 
+        let listIcon = $('.icon-list');
+        it('should display menu when list icon is clicked', function() {
+            listIcon.click();
+            expect(body.hasClass('menu-hidden')).not.toBeTruthy();
+        });
+
     /* TODO: Write a new test suite named "Initial Entries" */
 
         /* TODO: Write a test that ensures when the loadFeed
